@@ -12,7 +12,7 @@ client.once("ready", () => {
 
 commands.forEach((element) => {
   client.api
-    .applications(config.botId) //.guilds("249809874853036033")
+    .applications(config.botId).guilds("249809874853036033")
     .commands.post({ data: element })
     .then((response) => console.log(response))
     .catch((error) => console.log(error));
@@ -60,6 +60,20 @@ client.ws.on("INTERACTION_CREATE", async (interaction) => {
             data: {
               content:
                 "What's your model?",
+            },
+          },
+        })
+        .catch((error) => console.log(error))
+    }
+    else if (command === "thisu") {
+      client.api
+        .interactions(interaction.id, interaction.token)
+        .callback.post({
+          data: {
+            type: 3,
+            data: {
+              content:
+                "This, but unironically",
             },
           },
         })
