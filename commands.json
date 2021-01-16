@@ -16,5 +16,10 @@
     "name": "everyone",
     "description": "Jape everyone by sending an at message.",
     "type": 4
+  },
+  {
+    "name": "model",
+    "description": "Ask people what their model is.",
+    "type": 4
   }
 ]
