@@ -21,5 +21,10 @@
     "name": "model",
     "description": "Ask people what their model is.",
     "type": 4
+  },
+  {
+    "name": "thisu",
+    "description": "Have Ben tell people how he truly feels.",
+    "type": 4
   }
 ]

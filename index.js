@@ -65,6 +65,20 @@ client.ws.on("INTERACTION_CREATE", async (interaction) => {
         })
         .catch((error) => console.log(error))
     }
+    else if (command === "thisu") {
+      client.api
+        .interactions(interaction.id, interaction.token)
+        .callback.post({
+          data: {
+            type: 3,
+            data: {
+              content:
+                "This, but unironically",
+            },
+          },
+        })
+        .catch((error) => console.log(error))
+    }
   } else {
     console.log("Unknown command.");
   }
