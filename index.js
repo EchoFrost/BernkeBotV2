@@ -12,7 +12,7 @@ client.once("ready", () => {
 
 commands.forEach((element) => {
   client.api
-    .applications(config.botId).guilds("249809874853036033")
+    .applications(config.botId) //.guilds("249809874853036033")
     .commands.post({ data: element })
     .then((response) => console.log(response))
     .catch((error) => console.log(error));
