@@ -1,0 +1,15 @@
+[
+  {
+    "name": "test",
+    "description": "test description"
+  },
+  {
+    "name": "justin",
+    "description": "justin's command"
+  },
+  {
+    "name": "takematrix",
+    "description": "Help command for viewing the take matrix's quadrant definitions.",
+    "type": 4
+  }
+]
