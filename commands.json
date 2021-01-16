@@ -11,5 +11,10 @@
     "name": "takematrix",
     "description": "Help command for viewing the take matrix's quadrant definitions.",
     "type": 4
+  },
+  {
+    "name": "everyone",
+    "description": "Jape everyone by sending an at message.",
+    "type": 4
   }
 ]
