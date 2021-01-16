@@ -51,6 +51,20 @@ client.ws.on("INTERACTION_CREATE", async (interaction) => {
         })
         .catch((error) => console.log(error))
     }
+    else if (command === "model") {
+      client.api
+        .interactions(interaction.id, interaction.token)
+        .callback.post({
+          data: {
+            type: 4,
+            data: {
+              content:
+                "What's your model?",
+            },
+          },
+        })
+        .catch((error) => console.log(error))
+    }
   } else {
     console.log("Unknown command.");
   }
