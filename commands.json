@@ -26,5 +26,10 @@
     "name": "thisu",
     "description": "Have Ben tell people how he truly feels.",
     "type": 4
+  },
+  {
+    "name": "child",
+    "description": "Ben insults a person's model.",
+    "type": 3
   }
 ]
