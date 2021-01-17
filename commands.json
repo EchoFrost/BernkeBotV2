@@ -26,5 +26,10 @@
     "name": "thisu",
     "description": "Have Ben tell people how he truly feels.",
     "type": 4
+  },
+  {
+    "name": "dumbdumb",
+    "description": "Have Ben put people in their place.",
+    "type": 3
   }
 ]
