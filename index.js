@@ -12,7 +12,7 @@ client.once("ready", () => {
 
 commands.forEach((element) => {
   client.api
-    .applications(config.botId) //.guilds("249809874853036033")
+    .applications(config.botId).guilds("249809874853036033")
     .commands.post({ data: element })
     .then((response) => console.log(response))
     .catch((error) => console.log(error));
@@ -74,6 +74,20 @@ client.ws.on("INTERACTION_CREATE", async (interaction) => {
             data: {
               content:
                 "This, but unironically",
+            },
+          },
+        })
+        .catch((error) => console.log(error))
+    }
+    else if (command === "census") {
+      client.api
+        .interactions(interaction.id, interaction.token)
+        .callback.post({
+          data: {
+            type: 3,
+            data: {
+              content:
+                "https://www2.census.gov/library/publications/decennial/1860/population/1860a-31.pdf",
             },
           },
         })
