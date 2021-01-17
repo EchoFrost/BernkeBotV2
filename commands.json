@@ -25,6 +25,11 @@
   {
     "name": "thisu",
     "description": "Have Ben tell people how he truly feels.",
-    "type": 4
+    "type": 3
+  },
+  {
+    "name": "iconic",
+    "description": "Have Ben post the iconic Supply-Demand curve.",
+    "type": 3
   }
 ]
