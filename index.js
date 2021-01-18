@@ -79,6 +79,20 @@ client.ws.on("INTERACTION_CREATE", async (interaction) => {
         })
         .catch((error) => console.log(error))
     }
+    else if (command === "census") {
+      client.api
+        .interactions(interaction.id, interaction.token)
+        .callback.post({
+          data: {
+            type: 3,
+            data: {
+              content:
+                "https://www2.census.gov/library/publications/decennial/1860/population/1860a-31.pdf",
+            },
+          },
+        })
+        .catch((error) => console.log(error))
+    }
     else if (command === "child") {
       client.api
         .interactions(interaction.id, interaction.token)

@@ -28,6 +28,11 @@
     "type": 4
   },
   {
+    "name": "census",
+    "description": "Ben proves his model via facts and logic.",
+    "type": 4
+  },
+  {
     "name": "child",
     "description": "Ben insults a person's model.",
     "type": 3
